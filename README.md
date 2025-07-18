@@ -4,11 +4,11 @@ Projeto desenvolvido como parte da disciplina **Linguagem de Programação III**
 
 ## 🚀 Funcionalidades
 
-- 📜 Cadastramento de Organizadores e Jogadores
+- 📜 Cadastramento de Organizadores e Jogadores.
 - 🧙 Cadastro e manipulação de campanhas e interesses.
 - 🔍 Visualização de detalhes de cada campanha e interesse.
 - ✏️ Edição e remoção de campanhas e interesses.
-- 💾 Integração com backend
+- 💾 Integração com backend.
   
 
 ## 🛠️ Tecnologias Utilizadas
@@ -36,3 +36,7 @@ yarn install
 yarn dev
 ```
 
+## 📌 Pré-requisitos
+Node.js 18+
+
+Yarn 1.22+ (instale com npm install -g yarn se necessário)
