@@ -1,0 +1,49 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "22"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node build/src/servidor.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "webapp": "cd ../front-end && yarn start",
+    "server": "nodemon -e ts --exec ts-node -r tsconfig-paths/register ./src/servidor.ts",
+    "web": "concurrently -n 'server,web' -c 'green,blue' \"yarn server\" \"yarn webapp\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^9.0.1",
+    "md5": "^2.3.0",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^2.3.3",
+    "node-cron": "^3.0.2",
+    "pg": "^8.11.1",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.2.44"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.12",
+    "@types/jsonwebtoken": "^9.0.2",
+    "@types/md5": "^2.3.2",
+    "@types/multer": "^1.4.7",
+    "@types/node": "^8.0.29",
+    "@types/node-cron": "^3.0.8",
+    "concurrently": "^6.5.0",
+    "dotenv": "^16.0.3",
+    "nodemon": "^2.0.22",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.0.0",
+    "typescript": "^5.1.3"
+  }
+}
